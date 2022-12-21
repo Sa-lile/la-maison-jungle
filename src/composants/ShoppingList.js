@@ -11,7 +11,7 @@ function ShoppingList() {
 				{plantList.map((plant, index) => (
 					<li id={'name_' + index} key={'name_' + index}>
 						<div>{plant.name}</div>
-						<div>{plant.category}</div>
+						{/* <div>{plant.category}</div> */}
 					</li>
 				))}
 			</ul>
