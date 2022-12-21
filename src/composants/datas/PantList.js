@@ -3,14 +3,14 @@
 
 const plantList = [
     { name: "Monster", category: "classique", id: "1", isBestSale: true },
-    { name: "Ficus Lyrata", category: "classique", id: "2", isBestSale: false },
+    { name: "Ficus Lyrata", category: "classique", id: "2", isBestSale: true },
     { name: "Pothos Argenté", category: "classique", id: "3", isBestSale: false },
     { name: "Calathea", category: "classique", id: "4", isBestSale: false },
-    { name: "Olivier", category: "extérieur", id: "5", isBestSale: false },
-    { name: "Cactus", category: "plante grasse", id: "6", isBestSale: false },
-    { name: "Basilique", category: "extérieur", id: "6", isBestSale: false },
+    { name: "Olivier", category: "extérieur", id: "5", isBestSale:  true },
+    { name: "Cactus", category: "plante grasse", id: "6", isBestSale:  true },
+    { name: "Basilique", category: "extérieur", id: "6", isBestSale:  true },
     { name: "Succulente", category: "plante grasse", id: "6", isBestSale: false },
-    { name: "Menthe", category: "extérieur", id: "6", isBestSale: false },
+    { name: "Menthe", category: "extérieur", id: "6", isBestSale:  true },
 
 ]
 

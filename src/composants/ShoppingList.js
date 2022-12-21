@@ -1,9 +1,9 @@
 import { plantList } from './datas/PantList';
 
 function ShoppingList() {
-	/* const category = plantList.array.forEach(element => {
-        
-    }, []); */
+    //  const category = plantList.array.forEach(element => (
+    //     console.log (element,[]);
+
 
 	return (
 		<div>
