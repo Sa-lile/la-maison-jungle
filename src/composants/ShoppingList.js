@@ -1,19 +1,22 @@
-const plantList = [
-    'monstera',
-    'ficus lyrata',
-    'pothos argenté',
-    'yucca',
-    'palmier'
-]
+import { plantList } from './datas/PantList';
 
 function ShoppingList() {
-    return (
-        <ul>
-            {plantList.map((plant, index) => (
-               <li key={`${plant}-${index}`}>{ plant }</li>
-            ))}
-        </ul>
-    )
+	/* const category = plantList.array.forEach(element => {
+        
+    }, []); */
+
+	return (
+		<div>
+			<ul>
+				{plantList.map((plant, index) => (
+					<li id={'name_' + index} key={'name_' + index}>
+						<div>{plant.name}</div>
+						<div>{plant.category}</div>
+					</li>
+				))}
+			</ul>
+		</div>
+	);
 }
 
-export default ShoppingList
+export default ShoppingList;
