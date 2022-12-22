@@ -8,9 +8,9 @@ const plantList = [
     { name: "Calathea", category: "classique", id: "4", isBestSale: false },
     { name: "Olivier", category: "extérieur", id: "5", isBestSale:  true },
     { name: "Cactus", category: "plante grasse", id: "6", isBestSale:  true },
-    { name: "Basilique", category: "extérieur", id: "6", isBestSale:  true },
-    { name: "Succulente", category: "plante grasse", id: "6", isBestSale: false },
-    { name: "Menthe", category: "extérieur", id: "6", isBestSale:  true },
+    { name: "Basilique", category: "extérieur", id: "7", isBestSale:  true },
+    { name: "Succulente", category: "plante grasse", id: "8", isBestSale: false },
+    { name: "Menthe", category: "extérieur", id: "9", isBestSale:  true },
 
 ]
 
