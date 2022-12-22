@@ -1,4 +1,8 @@
 import { plantList } from './datas/PantList';
+// import PlantItem from './PlantItem';
+import '../styles/ShoppingList.css';
+// import { CareScale } from './CareScale';
+// import { PlantItem } from './PlantItem';
 
 function ShoppingList() {
 	/* reduce() est accumulateur et traite chaque valeur
@@ -6,8 +10,7 @@ function ShoppingList() {
 	 *  forEach() permet d'exéxuter une fonction donnée sur chaque élélent du tableau
 	 *
 	 */
-	
-	 
+
 	//   const category = ['classique', 'extérieur', 'plante grasse']
 	//   const category = plantList.forEach(plantList.array.category, id => {
 	// 	  console.log (category,[]);
@@ -24,11 +27,26 @@ function ShoppingList() {
 			<ul>
 				{plantList.map((plant, index) => (
 					<li id={'name_' + index} key={'name_' + index}>
-						<div>{plant.id}: {plant.name}: {plant.category}</div>
+						<div>
+							{plant.id}:{plant.name}
+						</div>
 					</li>
 				))}
 			</ul>
+			{/* <ul className="lmj-plant-list">
+				{PlantItem.map(({ props }) => (
+					<PlantItem 
+					id={props.id} 
+					cover={props.cover} 
+					name={props.name} 
+					light={props.light} 
+					water={props.water} />
+				))}
+			</ul> */}
 		</div>
+		// {/* <div>{plant.category}</div> */}
+		// {/* <CareScale careType="water" scaleValue={this.props.water} />
+		// <CareScale careType="light" scaleValue={this.props.light} /> */}
 	);
 }
 

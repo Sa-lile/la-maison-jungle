@@ -2,7 +2,7 @@
 // const category = ['classique', 'extérieur', 'plante grasse'];
 
 const plantList = [
-    { name: "Monster", category: "classique", id: "1", isBestSale: true },
+    { name: "Monstera", category: "classique", id: "1", isBestSale: true },
     { name: "Ficus Lyrata", category: "classique", id: "2", isBestSale: true },
     { name: "Pothos Argenté", category: "classique", id: "3", isBestSale: false },
     { name: "Calathea", category: "classique", id: "4", isBestSale: false },
@@ -11,7 +11,7 @@ const plantList = [
     { name: "Basilique", category: "extérieur", id: "7", isBestSale:  true },
     { name: "Succulente", category: "plante grasse", id: "8", isBestSale: false },
     { name: "Menthe", category: "extérieur", id: "9", isBestSale:  true },
-
+	
 ]
 
 /* 
