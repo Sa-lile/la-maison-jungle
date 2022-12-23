@@ -1,7 +1,6 @@
 import { plantList } from './datas/PantList';
 import '../styles/ShoppingList.css';
 import PlantItem from './PlantItem';
-// import { CareScale } from './CareScale';
 
 function ShoppingList() {
 	/* reduce() est accumulateur et traite chaque valeur
@@ -11,7 +10,7 @@ function ShoppingList() {
 	 */
 
 	const categories = ['classique', 'extérieur', 'plante grasse'];
-	categories.forEach((category) => console.log(category));
+	categories.forEach((category) => console.log(category), []);
 
 	/**
 	 *  map() est crée un nouveau tableau avec les résultats
@@ -28,28 +27,7 @@ function ShoppingList() {
 					<li key={categories}>{categories}</li>
 				))}
 			</ul>
-			{/* <ul>
-				{plantList.map((plant, index) => (
-					<li id={'name_' + index} key={'name_' + index}>
-						<div>
-							{plant.id}:{plant.name}
-						</div>
-					</li>
-				))}
-			</ul> */}
 
-		{/* props ne functionne pas ....?? même j'ai changé PlanItems*/}
-			{/* <ul className="lmj-plant-list">
-				{plantList.map(({ props }) => (
-					<PlantItem 
-					id={props.id} 
-					cover={props.cover} 
-					name={props.name} 
-					light={props.light} 
-					water={props.water}
-					 />
-				))}
-			</ul> */}
 			<ul className='lmj-plant-list'>
 				{plantList.map(({ id, cover, name, water, light }) => (
 					<PlantItem
@@ -61,6 +39,31 @@ function ShoppingList() {
 					/>
 				))}
 			</ul>
+	       
+
+
+			{/* <ul>
+				{plantList.map((plant, index) => (
+					<li id={'name_' + index} key={'name_' + index}>
+						<div>
+							{plant.id}:{plant.name}
+						</div>
+					</li>
+				))}
+			</ul> */}
+
+		{/* "props" ne functionne pas ....?? même j'ai changé PlanItems*/}
+			{/* <ul className="lmj-plant-list">
+				{plantList.map(({ props }) => (
+					<PlantItem 
+					id={props.id} 
+					cover={props.cover} 
+					name={props.name} 
+					light={props.light} 
+					water={props.water}
+					 />
+				))}
+			</ul> */}
 		</div>
 	);
 }
