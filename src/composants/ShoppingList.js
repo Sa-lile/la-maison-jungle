@@ -1,6 +1,7 @@
 import { plantList } from './datas/PantList';
-import '../styles/ShoppingList.css';
 import PlantItem from './PlantItem';
+import '../styles/ShoppingList.css';
+
 
 function ShoppingList() {
 	/* reduce() est accumulateur et traite chaque valeur
@@ -40,7 +41,7 @@ function ShoppingList() {
 				))}
 			</ul>
 	       
-
+			
 
 			{/* <ul>
 				{plantList.map((plant, index) => (

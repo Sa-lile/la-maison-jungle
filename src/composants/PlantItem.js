@@ -1,9 +1,12 @@
 import '../styles/PlantItem.css';
 import CareScale from './CareScale';
 
-function handleClick(plantName) {
-    alert(`Vous voulez acheter 1 ${plantName} ? Très bon choix 🌱✨`)
+function handleClick(e) {
+    console.log('✨ Ceci est mon event :', e)
 }
+// function handleClick(plantName) {
+//     alert(`Vous voulez acheter 1 ${plantName} ? Très bon choix 🌱✨`)
+// }
 
 
 function PlantItem({ id, cover, name, water, light }) {
