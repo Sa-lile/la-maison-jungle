@@ -1,5 +1,4 @@
 import { plantList } from './datas/PantList';
-// import PlantItem from './PlantItem';
 import '../styles/ShoppingList.css';
 // import { CareScale } from './CareScale';
 // import { PlantItem } from './PlantItem';
@@ -11,10 +10,8 @@ function ShoppingList() {
 	 *
 	 */
 
-	//   const category = ['classique', 'extérieur', 'plante grasse']
-	//   const category = plantList.forEach(plantList.array.category, id => {
-	// 	  console.log (category,[]);
-	//  });
+	const categories = ['classique', 'extérieur', 'plante grasse'];
+	categories.forEach((category) => console.log(category));
 
 	/**
 	 *  map() est crée un nouveau tableau avec les résultats
@@ -24,6 +21,11 @@ function ShoppingList() {
 	 */
 	return (
 		<div>
+			<ul>
+				{categories.map((categories) => (
+					<li key={categories}>{categories}</li>
+				))}
+			</ul>
 			<ul>
 				{plantList.map((plant, index) => (
 					<li id={'name_' + index} key={'name_' + index}>
