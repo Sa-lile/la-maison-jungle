@@ -6,8 +6,7 @@ import '../styles/ShoppingList.css';
 function ShoppingList() {
 	/* reduce() est accumulateur et traite chaque valeur
 	 * d'une liste (de la gauche vers la droite)
-	 *  forEach() permet d'exéxuter une fonction donnée sur chaque élélent du tableau
-	 *
+	 *  forEach() permet d'exéxuter une fonction donnée sur chaque élément du tableau
 	 */
 
 	const categories = ['classique', 'extérieur', 'plante grasse'];
