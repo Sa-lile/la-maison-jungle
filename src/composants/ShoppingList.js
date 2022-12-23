@@ -1,7 +1,7 @@
 import { plantList } from './datas/PantList';
 import '../styles/ShoppingList.css';
+import PlantItem from './PlantItem';
 // import { CareScale } from './CareScale';
-// import { PlantItem } from './PlantItem';
 
 function ShoppingList() {
 	/* reduce() est accumulateur et traite chaque valeur
@@ -19,6 +19,8 @@ function ShoppingList() {
 	 *  key() est revoie un nouvel objet Array Iterator qui contient
 	 *  les clefs pour chaque indice du tableau
 	 */
+
+	
 	return (
 		<div>
 			<ul>
@@ -26,7 +28,7 @@ function ShoppingList() {
 					<li key={categories}>{categories}</li>
 				))}
 			</ul>
-			<ul>
+			{/* <ul>
 				{plantList.map((plant, index) => (
 					<li id={'name_' + index} key={'name_' + index}>
 						<div>
@@ -34,21 +36,32 @@ function ShoppingList() {
 						</div>
 					</li>
 				))}
-			</ul>
+			</ul> */}
+
+		{/* props ne functionne pas ....?? même j'ai changé PlanItems*/}
 			{/* <ul className="lmj-plant-list">
-				{PlantItem.map(({ props }) => (
+				{plantList.map(({ props }) => (
 					<PlantItem 
 					id={props.id} 
 					cover={props.cover} 
 					name={props.name} 
 					light={props.light} 
-					water={props.water} />
+					water={props.water}
+					 />
 				))}
 			</ul> */}
+			<ul className='lmj-plant-list'>
+				{plantList.map(({ id, cover, name, water, light }) => (
+					<PlantItem
+						id={id}
+						cover={cover}
+						name={name}
+						water={water}
+						light={light}
+					/>
+				))}
+			</ul>
 		</div>
-		// {/* <div>{plant.category}</div> */}
-		// {/* <CareScale careType="water" scaleValue={this.props.water} />
-		// <CareScale careType="light" scaleValue={this.props.light} /> */}
 	);
 }
 
