@@ -10,7 +10,6 @@ function App() {
 
 	const [cart, updateCart] = useState([])
 
-
 	return (
 		<div>
 			<Banner />

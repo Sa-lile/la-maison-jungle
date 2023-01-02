@@ -21,6 +21,23 @@ function ShoppingList({cart, updateCart}) {
 	 *  key() est revoie un nouvel objet Array Iterator qui contient
 	 *  les clefs pour chaque indice du tableau
 	 */
+
+
+	function addToCart(name, price) {
+		const currentPlantAdded = cart.find((plant)=> plant.name === name)
+		if(currentPlantAdded) {
+			const cartFilteredCurrentPlant = cart.filter(
+				(plant) =>plant.name !== name
+			)
+			updateCart([
+				...cartFilteredCurrentPlant,
+				{ name, price, amount: currentPlantAdded.amount + 1}
+			])
+		} else {
+			updateCart([...cart, { name, price, amount: 1}])
+		}
+
+	}
 	
 	return (
 		<div className='lmj-shopping-list'>
@@ -45,7 +62,7 @@ function ShoppingList({cart, updateCart}) {
 						light={light} 
 						price={price}
 						/>
-                        <button onClick={() => updateCart(price)}>Ajouter</button>
+                        <button onClick={() => addToCart(name, price)}>Ajouter</button>
                     </div>
                 ))}
             </ul>
