@@ -1,4 +1,4 @@
-// import monstera from './assets/monstera'
+// import monstera from '../assets/monstera;jpg'
 // import lyrata from '../assets/lyrata.jpg'
 // import pothos from '../assets/pothos.jpg'
 // import succulent from '../assets/succulent.jpg'

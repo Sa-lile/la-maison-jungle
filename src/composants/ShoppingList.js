@@ -1,4 +1,4 @@
-import { plantList } from './datas/PantList';
+import { plantList } from './datas/PlantList';
 import PlantItem from './PlantItem';
 import '../styles/ShoppingList.css';
 
@@ -21,7 +21,7 @@ function ShoppingList() {
 
 	
 	return (
-		<div>
+		<div className='lmj-shopping-list'>
 			<ul>
 				{categories.map((categories) => (
 					<li key={categories}>{categories}</li>
