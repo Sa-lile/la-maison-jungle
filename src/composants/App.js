@@ -9,7 +9,7 @@ import { useState } from 'react';
 function App() {
 
 	const [cart, updateCart] = useState([])
-	const [isFooterShown, updateIsFooterShown] = useState([])
+	// const [isFooterShown, updateIsFooterShown] = useState([])
 
 	return (
 		<div>
@@ -18,11 +18,11 @@ function App() {
 				<Cart cart={cart} updateCart={updateCart} />
 				<ShoppingList cart={cart} updateCart={updateCart} />
 			</div>
-			<button onClick={() => updateIsFooterShown(!isFooterShown)}>
+			{/* <button onClick={() => updateIsFooterShown(!isFooterShown)}>
 				Cacher !
-			</button>
-			{isFooterShown && <Footer cart={cart} />}
-			{/* <Footer cart={cart} /> */}
+			</button> */}
+			{/* {isFooterShown && <Footer cart={cart} />} */}
+			<Footer cart={cart} />
 
 
 			{/* TEST */}

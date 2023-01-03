@@ -12,13 +12,13 @@ function ShoppingList({cart, updateCart}) {
 	 */
 
 	const [activeCategory, setActiveCategory] = useState('')
-	// const categories = plantList.reduce(
-	// 	(acc, plant) =>
-	// 		acc.includes(plant.category) ? acc : acc.concat(plant.category),
-	// 	[]
-	// )
+	const categories = plantList.reduce(
+		(acc, plant) =>
+			acc.includes(plant.category) ? acc : acc.concat(plant.category),
+		[]
+	)
 	// ces fonctuions apparîtrent dans le console Pas comme résultat
-	const categories = ['classique', 'extérieur', 'plante grasse'];
+	// const categories = ['classique', 'extérieur', 'plante grasse'];
 	categories.forEach((category) => console.log(category), []);
 
 	/**

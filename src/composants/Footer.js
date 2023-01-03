@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import'../styles/Footer.css';
 
 function Footer({ cart }) {
@@ -27,11 +27,11 @@ function Footer({ cart }) {
 		setInputValue(e.target.value);
 	}
 
-	function handleBlur() {
-		if (!inputValue.includes('@')) {
-			alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥")
-		}
-	}
+	// function handleBlur() {
+	// 	if (!inputValue.includes('@')) {
+	// 		alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥")
+	// 	}
+	// }
     
 	return (
 		<footer className=".lmj-footer ">
@@ -45,7 +45,7 @@ function Footer({ cart }) {
 				placeholder = "Entrez votre mail" 
                 onChange ={handleInput}
 				value={inputValue}
-				onBlur={handleBlur}
+				// onBlur={handleBlur}
 			
 			/>
 		</footer>

@@ -2,7 +2,7 @@ import '../styles/Cart.css'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-function Cart({cart, updateCart}) {
+function Cart({ cart, updateCart }) {
 	// const monsteraPrice = 8
     // const [cart, updateCart] = useState(0)
 	const [isOpen, setIsOpen] = useState(true)
@@ -10,7 +10,7 @@ function Cart({cart, updateCart}) {
         (acc, plantType) => acc + plantType.amount * plantType.price, 0
     )
     useEffect(() => {
-        document.title = `LMJ: ${total}€ d'achats`
+        document.title = `Total price : ${total}€ d'achats`
     }, [total])
 
 	return isOpen ? (
@@ -25,11 +25,11 @@ function Cart({cart, updateCart}) {
                 <div key={`${name}-${index}`}>
                     {name} {price}€ x {amount}
                 </div>
-            ))}
-            {/* <div>
-                Monstera : {monsteraPrice}€
-              
-            </div> */}
+                ))}
+                {/* <div>
+                    Monstera : {monsteraPrice}€
+                
+                </div>  */}
             <h3>Total : {total}€</h3>
             <button onClick={() => updateCart(0)}>Vider le panier</button>
         </div>
