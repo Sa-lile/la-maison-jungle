@@ -1,5 +1,16 @@
+const monstera = require('../../../src/assets/monstera.jpg'),
+      lyrata = require('../../../src/assets/lyrata.jpg'),
+      pothos = require('../../../src/assets/pothos.jpg'),
+      succulent = require('../../../src/assets/succulent.jpg'),
+      olivier = require('../../../src/assets/olivier.jpg'),
+      basil = require('../../../src/assets/basil.jpg'),
+      mint = require('../../../src/assets/succulent.jpg'),
+      calathea = require('../../../src/assets/calathea.jpg'),
+      cactus = require('../../../src/assets/cactus.jpg');
+
+/* je n'arrive pas affficher avec ces import */
 // import monstera from '../assets/monstera.jpg'
-// import lyrata from '../assets/lyrata.jpg'
+// import lyrata from '../assets/lyrata.jpg'      
 // import pothos from '../assets/pothos.jpg'
 // import succulent from '../assets/succulent.jpg'
 // import olivier from '../assets/olivier.jpg'
@@ -20,7 +31,7 @@ export const plantList = [
         id: "1", 
         light: 2,  
         water: 3, 
-        // cover: monstera, 
+        cover: monstera, 
         price: 15 
     },
     { 
@@ -29,7 +40,7 @@ export const plantList = [
         id: "2",
         light: 3, 
         water: 1, 
-        // cover: lyrata, 
+        cover: lyrata, 
         price: 16
     },
     { 
@@ -38,7 +49,7 @@ export const plantList = [
         id: "3",
         light: 1, 
         water: 2, 
-        // cover: pothos, 
+        cover: pothos, 
         price: 9
     },
     { 
@@ -47,7 +58,7 @@ export const plantList = [
         id: "4", 
         light: 1, 
         water: 2, 
-        // cover: calathea, 
+        cover: calathea, 
         price: 16 
     },
     { 
@@ -56,7 +67,7 @@ export const plantList = [
         id: "5", 
         light: 3, 
         water: 1, 
-        // cover: olivier, 
+        cover: olivier, 
         price: 25 
     },
     { 
@@ -65,7 +76,7 @@ export const plantList = [
         id: "6", 
         light: 1, 
         water: 2, 
-        // cover: cactus, 
+        cover: cactus, 
         price: 6 
     },
     { 
@@ -74,7 +85,7 @@ export const plantList = [
         id: "7", 
         light: 2, 
         water: 3, 
-        // cover: basil, 
+        cover: basil, 
         price: 5 
     },
     { 
@@ -83,7 +94,7 @@ export const plantList = [
         id: "8", 
         light: 2,
         water: 1,
-        // cover: succulent,
+        cover: succulent,
         price: 8 
     },
     { 
@@ -92,7 +103,7 @@ export const plantList = [
         id: "9", 
         light: 1, 
         water: 2, 
-        // cover: mint, 
+        cover: mint, 
         price: 4
     },
 	

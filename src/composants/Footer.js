@@ -1,20 +1,20 @@
 import { useEffect, useState } from 'react';
 import'../styles/Footer.css';
 
-function Footer() {
+function Footer({ cart }) {
 	const [inputValue, setInputValue] = useState('');
 
 
-	useEffect(() => {
-		console.log(` Cette alerte s'affcihe à chaque rendu `)
-	})
+	// useEffect(() => {
+	// 	console.log(` Cette alerte s'affcihe à chaque rendu `)
+	// })
 
 	// useEffect(() => {
-	// 	console.log(` Cette alerte s'affcihe au première fo `)
+	// 	console.log(` Cette alerte s'affcihe au première rendu `)
 	// },[])
 
 	// useEffect(() => {
-	// 	console.log(` Cette alerte s'affcihe à chaque render `)
+	// 	console.log(` Cette alerte s'affcihe la prémière fois et quand mon panier est mis à jour `)
 	// }, [cart])
 
 	// useEffect(() => {
@@ -25,6 +25,12 @@ function Footer() {
 
 	function handleInput(e) {
 		setInputValue(e.target.value);
+	}
+
+	function handleBlur() {
+		if (!inputValue.includes('@')) {
+			alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥")
+		}
 	}
     
 	return (
@@ -39,6 +45,7 @@ function Footer() {
 				placeholder = "Entrez votre mail" 
                 onChange ={handleInput}
 				value={inputValue}
+				onBlur={handleBlur}
 			
 			/>
 		</footer>

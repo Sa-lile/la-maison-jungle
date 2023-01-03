@@ -1,6 +1,6 @@
 import '../styles/Banner.css';
 import logo from '../assets/logo.png';
-import Recommendation from './Recommendation';
+// import Recommendation from './Recommendation';
 
 function Banner() {
 	const title = 'La maison jungle'
@@ -10,7 +10,7 @@ function Banner() {
 			<div>
 			<img src={logo} alt='La maison jungle' className='lmj-logo' />
             <h1 className='lmj-title'>{title}</h1>
-			<Recommendation />
+			{/* <Recommendation /> */}
 		</div>
 		</div>
 
