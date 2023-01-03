@@ -1,4 +1,4 @@
-import { plantList } from './datas/PlantList';
+import { plantList } from '../composants/datas/PlantList';
 import { useState } from 'react';
 import PlantItem  from './PlantItem';
 import '../styles/ShoppingList.css';

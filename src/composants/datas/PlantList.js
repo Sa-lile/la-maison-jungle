@@ -15,7 +15,7 @@
 
 export const plantList = [
     { 
-        name: "Monstera", 
+        name: 'Monstera', 
         category: "classique", 
         id: "1", 
         light: 2,  
