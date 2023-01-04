@@ -3,12 +3,18 @@ import Cart from './Cart';
 import ShoppingList from './ShoppingList';
 import Footer from './Footer';
 import '../styles/Layout.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 // import Recommendation from './Recommendation'
 
 function App() {
+	
+	/** ???  Je ne comprends pas ou je dois verifier ??*/
+	const savedCart = localStorage.getItem('cart')
+	const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart):[])
+	useEffect(() => {
+		localStorage.setItem('cart', JSON.stringify(cart))
+	})
 
-	const [cart, updateCart] = useState([])
 	// const [isFooterShown, updateIsFooterShown] = useState([])
 
 	return (
@@ -24,8 +30,9 @@ function App() {
 			{/* {isFooterShown && <Footer cart={cart} />} */}
 			<Footer cart={cart} />
 
-
+			
 			{/* TEST */}
+			
 			{/* <PlantItem id = '1' name = 'Monstra'  />     */}
 			{/* <Recommendation /> */}
 		</div>
