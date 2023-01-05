@@ -7,7 +7,12 @@
 	justify-content: flex-start;
 	width: 200px;
 }
-
+.vailder-button {
+	color: white;
+	background-color: rgb(73, 83, 83);
+	outline: none;
+	border: none;
+}
 .lmj-cart-add-button {
 	margin-left: 32px;
 	cursor: pointer;

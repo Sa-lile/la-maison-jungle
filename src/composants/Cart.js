@@ -32,15 +32,19 @@ function Cart({ cart, updateCart }) {
                 
                 </div>  */}
             <h3>Total : {total}€</h3>
+            <button className='vailder-button'onClick={() => updateCart([])}>Valider le panier</button>
+            <br></br>
             <button onClick={() => updateCart([])}>Vider le panier</button>
         </div>
     ) : (
         <div className='lmj-cart-closed'>
-            <button
+            <button 
                 className='lmj-cart-toggle-button'
                 onClick={() => setIsOpen(true)}>
                 Ouvrir le Panier
+
             </button>
+
         </div>
     )
     

@@ -17,6 +17,7 @@ function ShoppingList({cart, updateCart}) {
 			accumulator.includes(plant.category) ? accumulator : accumulator.concat(plant.category),
 		[]
 	)
+
 	// ces fonctuions apparîtrent dans le console Pas comme résultat
 	// const categories = ['classique', 'extérieur', 'plante grasse'];
 	// categories.forEach((category) => console.log(category), []);
@@ -59,7 +60,9 @@ function ShoppingList({cart, updateCart}) {
 			</ul> */}
 
 			<ul className='lmj-plant-list'>
-                {plantList.map(({ id, cover, name, water, light, price }) => (
+                {plantList.map(({ id, cover, name, water, light, price, category }) => 
+					!activeCategory || activeCategory === category ? (
+   				// ce n'est PAS activeCategory ou non activeCategory est egale category  
                     <div key={id}>
                         <PlantItem 
 						cover={cover} 
@@ -70,7 +73,8 @@ function ShoppingList({cart, updateCart}) {
 						/>
                         <button onClick={() => addToCart(name, price)}>Ajouter</button>
                     </div>
-                ))}
+                ): null
+				)}
             </ul>
 		</div>
 	)
