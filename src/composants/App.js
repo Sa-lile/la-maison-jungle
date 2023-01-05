@@ -28,8 +28,8 @@ function App() {
 				Cacher !
 			</button> */}
 			{/* {isFooterShown && <Footer cart={cart} />} */}
+			{/* <Categories /> */}
 			<Footer cart={cart} />
-
 			
 			{/* TEST */}
 			

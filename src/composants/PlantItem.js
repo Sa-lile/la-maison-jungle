@@ -4,7 +4,6 @@ import '../composants/datas/PlantList';
 
 
 
-
 // function handleClick(e) {
 //     console.log('✨ Ceci est mon event :', e)
 // }

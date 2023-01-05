@@ -26,7 +26,8 @@ function Footer({ cart }) {
 	function handleInput(e) {
 		setInputValue(e.target.value);
 	}
-
+     
+	/* j'ai caché en ce moment car ça affice chaque fois */
 	// function handleBlur() {
 	// 	if (!inputValue.includes('@')) {
 	// 		alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥")
@@ -46,7 +47,6 @@ function Footer({ cart }) {
                 onChange ={handleInput}
 				value={inputValue}
 				// onBlur={handleBlur}
-			
 			/>
 		</footer>
 	)
