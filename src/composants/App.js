@@ -11,7 +11,10 @@ function App() {
 	const [cart, updateCart] = useState([])
 	// const [isFooterShown, updateIsFooterShown] = useState([])
 
-	// localStorage permet de garder dans le navigator, 
+	/*localStorage permet de garder des objets dans le navigator, on ne voit pas juste dans le localStroge,
+	/*le client aussi le voit, ce n'est pas bon
+    */
+   
 	// const savedCart = localStorage.getItem('cart')
 	// const [cart, updateCart] = useState(savedCart ? JSON.parse(savedCart):[])
 	// useEffect(() => {
